@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Avance - Avance o seu Negócio</title>
+    <link rel="icon" type="image/png" href="assets/lion.png">
+    <meta name="description" content="Agência Avance - Marketing Digital focado em resultados, branding e escala premium.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP for Physics Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div id="scroll-status"></div>
+    <div id="cursor-blur"></div>
+    <div id="scroll-percentage" class="glass hidden">
+        <i class="fa-solid fa-arrow-down"></i> <span id="progress-text">0%</span>
+    </div>
+    
+    <nav id="navbar" class="glass">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/lion.png" alt="Agência Avance Logo" id="nav-logo-img">
+                <span>AVANCE</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">Sobre</a>
+                <a href="#services">Serviços</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="https://wa.me/5567992280327" target="_blank" rel="noopener noreferrer" class="cta-nav">Falar Agora</a>
+            </div>
+            <div class="mobile-menu-btn" role="button" aria-label="Abrir menu" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-logo-container">
+                    <img src="assets/lion.png" alt="Big Lion Logo" id="hero-lion-img" decoding="async">
+                </div>
+                <h1 class="reveal-text">Transformando <span class="gradient-text-purple">Visão</span> em <span class="gradient-text-purple">Inovação Estratégica</span></h1>
+                <p class="hero-subtitle">Estratégias de marketing digital com estética Apple e resultados exponenciais.</p>
+                <div class="hero-btns">
+                    <a href="#portfolio" class="btn-primary physics-btn">Ver Projetos</a>
+                    <a href="https://wa.me/5567992280327" class="btn-secondary physics-btn">WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mim Section -->
+        <section id="about" class="about-section">
+            <div class="about-container">
+                <div class="about-flex">
+                    <div class="about-image-side">
+                        <img src="assets/marketing-team.png" alt="Equipe Marketing Avance" class="about-hero-img glass" loading="lazy" decoding="async">
+                    </div>
+                    <div class="about-content-side">
+                        <h2 class="reveal-text">O Coração da Avance</h2>
+                        <div class="about-text">
+                    <p>Sou <span class="highlight-white">Gabriel</span>, especialista em design estratégico e criador da Agência Avance. Minha jornada no design digital sempre foi guiada por um princípio inegociável: unir estéticas modernas e de alta fidelidade — criando visuais limpos e sofisticados — a resultados reais e práticos para os negócios.</p>
+                    <br>
+                    <p>A Agência Avance nasceu de uma visão clara sobre o futuro do mercado e da necessidade de repensar a forma como as marcas se comunicam. Observando as dinâmicas de marketing, ficou evidente para mim que a criação de artes avulsas ou em pacotes fechados limitava o verdadeiro potencial das empresas. Uma marca forte e memorável exige consistência, e isso só acontece quando existe uma parceria contínua e dedicada.</p>
+                    <br>
+                    <p>Foi com essa mentalidade que dei uma virada de chave e estruturei a Avance sob um modelo exclusivo de <span class="highlight-white">assinatura mensal</span>. Essa mudança estratégica permite que eu mergulhe de cabeça na essência do seu negócio. Em vez de entregas pontuais, o foco é o crescimento sustentável da sua marca mês a mês.</p>
+                    <br>
+                    <p>Trabalho com inovação, explorando tendências visuais e interfaces de alto padrão, mas sempre mantendo os pés no chão para respeitar a história e a identidade de cada cliente. O objetivo aqui é direto e sem rodeios: entregar consistência, qualidade e um acompanhamento que garanta que a sua comunicação visual dite o ritmo do mercado.</p>
+                    <br>
+                    <p>Na Agência Avance, não criamos apenas imagens; construímos o posicionamento que vai preparar a sua marca hoje para liderar o amanhã. <span class="highlight-white">Vamos avançar juntos.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mvv-grid">
+                    <div class="mvv-card glass-card">
+                        <span class="mvv-icon">👁️</span>
+                        <h3>Visão</h3>
+                        <p>Liderar a nova era do design estratégico, onde cada pixel serve a um propósito de crescimento.</p>
+                    </div>
+                    <div class="mvv-card glass-card">
+                        <span class="mvv-icon">🎯</span>
+                        <h3>Missão</h3>
+                        <p>Transformar marcas comuns em ícones de mercado através de consistência e estética de alta fidelidade.</p>
+                    </div>
+                    <div class="mvv-card glass-card">
+                        <span class="mvv-icon">💎</span>
+                        <h3>Valores</h3>
+                        <p>Fidelidade total, inovação disruptiva e parceria contínua focada em resultados reais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card glass-card">
+                    <span class="stat-number">+150</span>
+                    <p class="stat-label">Projetos de Elite</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <span class="stat-number">+15mi</span>
+                    <p class="stat-label">ROI Gerado</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <span class="stat-number">98%</span>
+                    <p class="stat-label">NPS Positivo</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <span class="stat-number">24h</span>
+                    <p class="stat-label">Sprint Mensal</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stories Section -->
+        <section id="stories" class="stories-section">
+            <div class="section-header">
+                <h2>Histórias que Conectam</h2>
+            </div>
+            <div class="stories-container">
+                <div class="story-card glass-card" data-speed="1.1">
+                    <div class="card-image-wrapper">
+                        <img src="assets/strategy.png" alt="Norte Estratégico" class="story-img" loading="lazy" decoding="async">
+                    </div>
+                    <h3>O Norte Estratégico</h3>
+                    <p>Não é sobre postar, é sobre dominar. Traçamos rotas que levam sua marca ao topo do mercado.</p>
+                </div>
+                <div class="story-card glass-card" data-speed="1.2">
+                    <div class="card-image-wrapper">
+                        <img src="assets/target.png" alt="Precisão Cirúrgica" class="story-img" loading="lazy" decoding="async">
+                    </div>
+                    <h3>Precisão Cirúrgica</h3>
+                    <p>Cada clique, cada lead. Focamos no público que realmente converte em faturamento.</p>
+                </div>
+                <div class="story-card glass-card" data-speed="1.15">
+                    <div class="card-image-wrapper">
+                        <img src="assets/roi.png" alt="ROI de Impacto" class="story-img" loading="lazy" decoding="async">
+                    </div>
+                    <h3>ROI de Impacto</h3>
+                    <p>Transformamos investimento em lucro real. Escala sustentável com inteligência de dados.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="glass-container">
+                <div class="service-box glass-card">
+                    <span class="service-icon">✦</span>
+                    <h3>Branding</h3>
+                    <p>Identidade visual de elite para marcas que desejam ser inesquecíveis.</p>
+                </div>
+                <div class="service-box glass-card">
+                    <span class="service-icon">✦</span>
+                    <h3>Performance</h3>
+                    <p>Gestão de tráfego pago otimizada para máximo retorno (ROAS).</p>
+                </div>
+                <div class="service-box glass-card">
+                    <span class="service-icon">✦</span>
+                    <h3>Social Media</h3>
+                    <p>Gestão de redes sociais com conteúdo magnético e estratégico.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <h2 class="reveal-text">Nossas Criações</h2>
+            <div class="behance-grid">
+                <div class="behance-card glass-card" style="max-width: 1000px;">
+                    <h3 style="margin-bottom: 20px;">Design & Performance</h3>
+                    <p style="color: var(--text-gray); margin-bottom: 40px;">Explore nossos projetos mais recentes de Branding e UI/UX desenvolvidos com excelência.</p>
+                    <a href="https://www.behance.net/agenciavanceoficial" target="_blank" rel="noopener noreferrer" class="behance-btn">Explorar Portfólio no Behance</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- New Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-column brand-col">
+                <img src="assets/lion.png" alt="Logo Footer" class="footer-logo">
+                <p class="brand-description">
+                    A Agência Avance é especializada em design estratégico e posicionamento visual de alta fidelidade. 
+                    Rompemos com o modelo de artes avulsas para atuar exclusivamente através de assinaturas mensais, 
+                    garantindo o que realmente importa para uma marca forte: consistência e parceria de longo prazo. 
+                    Unimos estética moderna a uma visão de negócios direta, preparando empresas para liderar o mercado.
+                </p>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="https://wa.me/5567992280327" target="_blank" rel="noopener noreferrer">Fale Conosco</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column social-col">
+                <h4 class="social-title">Acompanhe-nos</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/agenciavanceoficial/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.behance.net/agenciavanceoficial" target="_blank" rel="noopener noreferrer" class="social-link" title="Behance">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="mailto:agenciavanceoficial@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" title="E-mail">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agência Avance. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5567992280327" class="whatsapp-float physics-btn" id="wa-btn">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
